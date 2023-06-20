@@ -2,9 +2,9 @@ import { makeAutoObservable } from "mobx";
 
 export enum ACTIVITY_TYPE {
   MOWING = "Mowing",
-  FERTILISATION = "Fertilisation",
-  IRRIGATION = "Irrigation",
-  AERATION = "Aeration",
+  FERTILISATION = "Fertilizing",
+  IRRIGATION = "Irrigating",
+  AERATION = "Aerating",
 }
 
 export enum PERFORMER {
