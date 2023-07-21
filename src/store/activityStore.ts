@@ -118,7 +118,7 @@ class ActivityStore {
   }
 
   updateActivity(activity: Activity) {
-    let oldActivityIndex = this.allActivities.findIndex((item) => (item.id = this.currentActivity?.id));
+    let oldActivityIndex = this.allActivities.findIndex((item) => (item.id === this.currentActivity?.id));
     if (oldActivityIndex > -1) {
       Object.assign(this.allActivities[oldActivityIndex], activity);
       localStorage.setItem("activities", JSON.stringify(this.allActivities));
